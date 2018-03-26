@@ -3,8 +3,11 @@
     text-align: center;
 }
 .header{
-    
+    background-color: red;
 }
 .footer{
-    
+    background-color: black;
+}
+.h3{
+    color: blue;
 }

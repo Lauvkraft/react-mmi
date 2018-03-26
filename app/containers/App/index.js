@@ -10,22 +10,49 @@ import Machine from '../../components/Machine.js';
 import '../../css/styles.css';
 // On peut aussi importer du CSS de la meme facon.
 
-export default function App() {
-  return (
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      Zboui:[
+      {
+        name: "Machine 1",
+        isActive: true
+      },
+      {
+        name: "Machine 2",
+        isActive: true
+      },
+      {
+        name: "Machine 3",
+        isActive: true
+        }
+      ]
+    }
+    console.log(this.state);
+console.log(this.state.machine);
+  }
+
+render() {
+  return(
     <div>
-    <Header/>
-      <Machine number="1"
-      isActive="yes"/>
-      <Machine number="2"
-      isActive="no"/>
-      <Machine number="3"
-      isActive="yes"/>
-      <Footer/>
-    </div>
-  
     
-  );
+    {this.state.Zboui.map(machine=>
+     <Machine title={machine.name}
+       key={machine.key}
+         isActive={machine.isActive}/>
+    )
+  }
+
+<header/>
+
+<footer/>
+</div>
+    )
+  }
 }
+export default App;
+  
   // Un return doit retourner un seul élément du DOM
     // Si on veut afficher plusieurs éléments adjacents,
     // On devra donc les encapsuler dans une DIV parente.
