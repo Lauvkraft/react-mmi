@@ -15,7 +15,8 @@ Travail par groupes de 2, production individuelle.
 ### Consignes
 - Lancez le serveur et ouvrez les fichiers app/containers/App/index.js et app/components/Machine.js
 - Affichez le composant Machine plusieurs fois dans la page. 
-- Affichez des données dynamiques dans le composant Machine en lui passant du texte via des Props depuis App/index.js
+- Affichez des données dynamiques dans le composant Machine en lui passant du texte via des Props 
+- depuis App/index.js
 - Créez un composant Header, et un composant Footer.
 
 ## Documentation
